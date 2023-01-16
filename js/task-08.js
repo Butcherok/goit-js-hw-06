@@ -29,9 +29,9 @@ function onFormSubmit(event) {
         if (event.currentTarget.elements.email.value === ''
         ||  event.currentTarget.elements.password.value === ''
         ) {
-            console.log(`You must fill in all fields!!!`)
-        } else {
-            console.log(`{${event.currentTarget.elements.email.name}: ${event.currentTarget.elements.email.value}, ${event.currentTarget.elements.password.name}: ${event.currentTarget.elements.password.value}}`)
-        }
+            alert(`You must fill in all fields!!!`)
+        } 
+            console.log({event.currentTarget.elements.email.name: event.currentTarget.elements.email.value, event.currentTarget.elements.password.name: event.currentTarget.elements.password.value})
+        
     event.currentTarget.reset();
 }
