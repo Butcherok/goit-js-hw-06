@@ -1,7 +1,7 @@
 const statusRange = document.querySelector('#font-size-control');
 const text = document.querySelector('#text');
 
-statusRange.addEventListener('change', onChangeRange);
+statusRange.addEventListener('input', onChangeRange);
 
 function onChangeRange (event) {
     statusRange.range = event.currentTarget.value;
