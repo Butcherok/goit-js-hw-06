@@ -9,6 +9,6 @@ objButton.addEventListener('click', onChangeColor);
 
 function onChangeColor (event) {
   
-  objBody.style.backgroundColor = `${getRandomHexColor()}`;
-  textColor.textContent = `${getRandomHexColor()}`;
+  objBody.style.backgroundColor = getRandomHexColor();
+  textColor.textContent = objBody.style.backgroundColor;
 };
